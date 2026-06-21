@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
-  <rect width="600" height="600" fill="#151313"/>
-  <circle cx="230" cy="250" r="95" fill="#f2d7df"/>
-  <circle cx="370" cy="250" r="95" fill="#c55873"/>
-  <rect x="120" y="360" width="360" height="120" rx="60" fill="#fff" opacity=".86"/>
-  <text x="300" y="535" fill="#fff" font-family="Arial, sans-serif" font-size="42" text-anchor="middle">Groom Parents</text>
-</svg>
