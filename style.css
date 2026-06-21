@@ -1,14 +1,14 @@
 :root {
-  --bg: #f6dce3;
-  --paper: #fff9f9;
-  --ink: #171313;
-  --muted: #74666a;
-  --line: rgba(23, 19, 19, 0.16);
-  --accent: #e96784;
-  --accent-dark: #ba375b;
-  --charcoal: #121010;
-  --sage: #7b8f7c;
-  --sky: #8db8cf;
+  --bg: #ebe5db;
+  --paper: #f9f5ee;
+  --ink: #2f2a22;
+  --muted: #716455;
+  --line: rgba(47, 42, 34, 0.18);
+  --accent: #9c6f4e;
+  --accent-dark: #6f4d35;
+  --charcoal: #362d24;
+  --sage: #8d8a72;
+  --sky: #b8ad9a;
   --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
   --font-ko: "Gowun Batang", "Noto Serif KR", serif;
   --font-ui: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -24,7 +24,7 @@ html {
 
 body {
   margin: 0;
-  background: #efe7e0;
+  background: #ded5c8;
   color: var(--ink);
   font-family: var(--font-ko);
   letter-spacing: 0;
@@ -42,7 +42,7 @@ a {
   margin: 0 auto;
   overflow: hidden;
   background: var(--bg);
-  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 24px 80px rgba(54, 45, 36, 0.18);
 }
 
 .music-toggle {
@@ -55,7 +55,7 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.72);
   border-radius: 50%;
   color: #fff;
-  background: rgba(0, 0, 0, 0.54);
+  background: rgba(54, 45, 36, 0.68);
   backdrop-filter: blur(8px);
   cursor: pointer;
 }
@@ -77,7 +77,7 @@ a {
   height: 100vh;
   min-height: 720px;
   object-fit: cover;
-  object-position: 50% 45%;
+  object-position: 42% 50%;
   border-radius: 0;
   display: block;
 }
@@ -85,15 +85,13 @@ a {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: clamp(86px, 14vh, 128px) 10px 0;
+  display: block;
+  padding: 0;
   color: #fff;
-  text-align: center;
   border-radius: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.02) 42%, rgba(0, 0, 0, 0.08));
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.12) 42%, rgba(0, 0, 0, 0.04)),
+    linear-gradient(180deg, rgba(77, 55, 38, 0.16), rgba(0, 0, 0, 0.02) 52%, rgba(0, 0, 0, 0.22));
   pointer-events: none;
 }
 
@@ -103,13 +101,14 @@ a {
   color: var(--accent-dark);
   font-family: var(--font-display);
   font-size: 0.78rem;
-  font-style: italic;
-  font-weight: 600;
+  font-style: normal;
+  font-weight: 500;
   letter-spacing: 0;
+  text-transform: uppercase;
 }
 
 .hero .eyebrow {
-  color: #ffc0cf;
+  color: rgba(255, 255, 255, 0.82);
   font-size: 1.45rem;
 }
 
@@ -122,12 +121,50 @@ h2 {
 }
 
 h1 {
-  max-width: 100%;
+  position: absolute;
+  top: clamp(70px, 10vh, 96px);
+  left: 24px;
   color: rgba(255, 255, 255, 0.95);
-  font-size: clamp(1.5rem, 6.6vw, 1.86rem);
+  font-size: clamp(2rem, 8vw, 2.8rem);
   font-weight: 300;
-  line-height: 1.04;
-  white-space: nowrap;
+  line-height: 0.9;
+  white-space: normal;
+}
+
+.hero-date-block {
+  position: absolute;
+  top: clamp(166px, 22vh, 220px);
+  left: 28px;
+  padding-left: 16px;
+  border-left: 1px solid rgba(255, 255, 255, 0.62);
+  color: rgba(255, 255, 255, 0.92);
+  font-family: var(--font-ui);
+  font-size: 0.68rem;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.hero-date-block span,
+.hero-date-block strong {
+  display: block;
+  font-weight: 400;
+}
+
+.hero-venue {
+  position: absolute;
+  right: 24px;
+  bottom: 34px;
+  color: rgba(255, 255, 255, 0.92);
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  line-height: 1.55;
+  text-align: right;
+}
+
+.hero-venue span,
+.hero-venue strong {
+  display: block;
+  font-weight: 500;
 }
 
 h2 {
@@ -165,8 +202,8 @@ h2 {
 
 .pill-button.light {
   margin-top: 20px;
-  color: var(--charcoal);
-  background: #fff;
+  color: var(--ink);
+  background: var(--paper);
 }
 
 .section {
@@ -181,7 +218,7 @@ h2 {
 .invitation-copy {
   margin: 24px auto;
   max-width: 310px;
-  color: #483b3f;
+  color: var(--ink);
   font-size: 1.02rem;
   line-height: 2;
   word-break: keep-all;
@@ -189,15 +226,15 @@ h2 {
 
 .ceremony-card {
   padding: 24px 18px;
-  color: #fff;
-  background: var(--charcoal);
+  color: var(--ink);
+  background: var(--paper);
   text-align: center;
 }
 
 .ceremony-card p,
 .ceremony-card span {
   margin: 0;
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--muted);
   font-family: var(--font-ui);
   font-size: 0.83rem;
 }
@@ -224,7 +261,7 @@ h2 {
 
 .name-grid div {
   padding: 20px 12px;
-  background: rgba(255, 255, 255, 0.42);
+  background: rgba(249, 245, 238, 0.72);
   text-align: center;
 }
 
@@ -274,7 +311,7 @@ h2 {
   gap: 16px;
   margin-top: 14px;
   padding: 12px;
-  background: rgba(255, 255, 255, 0.42);
+  background: rgba(249, 245, 238, 0.72);
 }
 
 .parent-card img {
@@ -314,7 +351,7 @@ h2 {
   place-items: center;
   border-radius: 50%;
   color: #fff;
-  background: rgba(0, 0, 0, 0.62);
+  background: rgba(54, 45, 36, 0.72);
   font-size: 1.25rem;
 }
 
@@ -355,8 +392,8 @@ h2 {
 
 .text-button {
   margin: 22px auto 0;
-  color: var(--charcoal);
-  background: #fff;
+  color: #fff;
+  background: var(--accent);
 }
 
 .calendar-section {
@@ -373,7 +410,7 @@ h2 {
   grid-template-columns: repeat(7, 1fr);
   gap: 6px;
   padding: 20px 10px;
-  background: rgba(255, 255, 255, 0.38);
+  background: rgba(249, 245, 238, 0.72);
 }
 
 .calendar span,
@@ -399,7 +436,7 @@ h2 {
 .venue-box {
   margin-top: 18px;
   padding: 22px 18px;
-  background: rgba(255, 255, 255, 0.46);
+  background: rgba(249, 245, 238, 0.78);
 }
 
 .venue-box strong {
@@ -454,7 +491,7 @@ h2 {
 
 details {
   margin-top: 12px;
-  background: rgba(255, 255, 255, 0.42);
+  background: rgba(249, 245, 238, 0.72);
 }
 
 summary {
@@ -555,7 +592,7 @@ summary {
   place-items: center;
   padding: 28px;
   color: #fff;
-  background: linear-gradient(135deg, #202020, #7b2e47);
+  background: linear-gradient(135deg, var(--charcoal), var(--accent-dark));
   text-align: center;
 }
 
