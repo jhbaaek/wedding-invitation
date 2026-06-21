@@ -131,42 +131,6 @@ h1 {
   white-space: normal;
 }
 
-.hero-date-block {
-  position: absolute;
-  top: clamp(166px, 22vh, 220px);
-  left: 28px;
-  padding-left: 16px;
-  border-left: 1px solid rgba(255, 255, 255, 0.62);
-  color: rgba(255, 255, 255, 0.92);
-  font-family: var(--font-ui);
-  font-size: 0.68rem;
-  line-height: 1.35;
-  text-align: left;
-}
-
-.hero-date-block span,
-.hero-date-block strong {
-  display: block;
-  font-weight: 400;
-}
-
-.hero-venue {
-  position: absolute;
-  right: 24px;
-  bottom: 34px;
-  color: rgba(255, 255, 255, 0.92);
-  font-family: var(--font-ui);
-  font-size: 0.7rem;
-  line-height: 1.55;
-  text-align: right;
-}
-
-.hero-venue span,
-.hero-venue strong {
-  display: block;
-  font-weight: 500;
-}
-
 h2 {
   font-size: 1.48rem;
   line-height: 1.35;
@@ -252,20 +216,16 @@ h2 {
   border-radius: 2px;
 }
 
-.name-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  margin-top: 20px;
+.couple-section {
+  padding: 0;
+  border-top: 0;
 }
 
-.name-grid div {
-  padding: 20px 12px;
-  background: rgba(249, 245, 238, 0.72);
-  text-align: center;
+.couple-section .wide-image {
+  width: 100%;
+  border-radius: 0;
 }
 
-.name-grid span,
 .parent-card span,
 .account-row span {
   display: block;
@@ -275,25 +235,12 @@ h2 {
   font-weight: 700;
 }
 
-.name-grid strong {
-  display: block;
-  margin: 8px 0 3px;
-  font-size: 1.28rem;
-}
-
-.name-grid p,
-.parents-line,
 .letter-section p,
 .info-list p,
 .venue-box p,
 .footer p {
   color: var(--muted);
   line-height: 1.8;
-}
-
-.parents-line {
-  margin: 22px 0 0;
-  text-align: center;
 }
 
 .parents-section h2,
