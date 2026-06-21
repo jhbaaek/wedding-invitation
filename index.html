@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>백종혁 & 김하빈 모바일 청첩장</title>
+    <meta name="description" content="2026년 10월 25일, 백종혁 김하빈의 결혼식에 초대합니다." />
+    <meta property="og:title" content="백종혁 & 김하빈 결혼합니다" />
+    <meta property="og:description" content="2026년 10월 25일 일요일 오후 12시 10분, 그레이스파티" />
+    <meta property="og:image" content="./images/share.svg" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <button class="music-toggle" type="button" aria-pressed="false" aria-label="배경음악 재생">
+        <span class="music-icon">♪</span>
+      </button>
+
+      <section class="hero" id="top">
+        <img class="hero-image" src="./images/cover.svg" alt="웨딩 커버 이미지 placeholder" />
+        <div class="hero-overlay">
+          <p class="eyebrow">Our Wedding</p>
+          <h1>Jyong Hyeok Baek<br />&<br />Habeen Kim</h1>
+          <p class="hero-date">2026.10.25 SUN · 12:10 PM</p>
+          <a class="pill-button" href="#calendar">SAVE THE DATE</a>
+        </div>
+      </section>
+
+      <section class="section intro-section">
+        <p class="section-kicker">Invitation</p>
+        <h2>백종혁 그리고 김하빈</h2>
+        <p class="invitation-copy">
+          6년 동안 함께한 두 사람이 이제 부부가 되려 합니다.
+          저희의 소중한 날에 함께하시어 축하해 주시면 감사하겠습니다.
+        </p>
+        <div class="ceremony-card">
+          <p>2026년 10월 25일 일요일 오후 12시 10분</p>
+          <strong>그레이스파티</strong>
+          <span>서울시 관악구 남부순환로 1440 그레이스파티</span>
+        </div>
+      </section>
+
+      <section class="section couple-section">
+        <img class="wide-image" src="./images/couple.svg" alt="신랑 신부 이미지 placeholder" />
+        <div class="name-grid" aria-label="신랑 신부 소개">
+          <div>
+            <span>Groom</span>
+            <strong>백종혁</strong>
+            <p>Jyong Hyeok Baek</p>
+          </div>
+          <div>
+            <span>Bride</span>
+            <strong>김하빈</strong>
+            <p>Habeen Kim</p>
+          </div>
+        </div>
+        <p class="parents-line">
+          백승일 · 김효경의 아들 종혁<br />
+          김성현 · 이길희의 딸 하빈
+        </p>
+      </section>
+
+      <section class="section parents-section">
+        <p class="section-kicker">With Our Families</p>
+        <h2>부모님께 감사의 마음을 담아</h2>
+        <div class="parent-card">
+          <img src="./images/parents-groom.svg" alt="신랑 측 부모님 이미지 placeholder" />
+          <div>
+            <span>Groom's Parents</span>
+            <strong>백승일 · 김효경</strong>
+          </div>
+        </div>
+        <div class="parent-card">
+          <img src="./images/parents-bride.svg" alt="신부 측 부모님 이미지 placeholder" />
+          <div>
+            <span>Bride's Parents</span>
+            <strong>김성현 · 이길희</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section video-section">
+        <p class="section-kicker">Wedding Film</p>
+        <button class="video-thumb" type="button" aria-label="웨딩 영상 placeholder 열기">
+          <img src="./images/video-thumb.svg" alt="웨딩 영상 썸네일 placeholder" />
+          <span class="play-button">▶</span>
+        </button>
+      </section>
+
+      <section class="section letter-section">
+        <p class="section-kicker">Letter</p>
+        <h2>함께 걸어온 시간</h2>
+        <img class="wide-image" src="./images/story.svg" alt="러브레터 이미지 placeholder" />
+        <p>
+          처음 만난 날의 설렘부터 오늘의 약속까지, 우리의 모든 순간이 이 하루로 이어졌습니다.
+          앞으로도 서로의 가장 다정한 편이 되어 함께 걷겠습니다.
+        </p>
+      </section>
+
+      <section class="section gallery-section" id="gallery">
+        <p class="section-kicker">Gallery</p>
+        <h2>우리의 순간들</h2>
+        <div class="gallery-grid">
+          <button class="gallery-item" type="button"><img src="./images/gallery-01.svg" alt="갤러리 이미지 1 placeholder" /></button>
+          <button class="gallery-item" type="button"><img src="./images/gallery-02.svg" alt="갤러리 이미지 2 placeholder" /></button>
+          <button class="gallery-item" type="button"><img src="./images/gallery-03.svg" alt="갤러리 이미지 3 placeholder" /></button>
+          <button class="gallery-item" type="button"><img src="./images/gallery-04.svg" alt="갤러리 이미지 4 placeholder" /></button>
+          <button class="gallery-item is-extra" type="button"><img src="./images/gallery-05.svg" alt="갤러리 이미지 5 placeholder" /></button>
+          <button class="gallery-item is-extra" type="button"><img src="./images/gallery-06.svg" alt="갤러리 이미지 6 placeholder" /></button>
+        </div>
+        <button class="text-button" type="button" data-action="more-gallery">더보기</button>
+      </section>
+
+      <section class="section calendar-section" id="calendar">
+        <p class="section-kicker">Calendar</p>
+        <h2>2026.10.25 SUN</h2>
+        <p class="time-text">오후 12시 10분</p>
+        <div class="calendar" aria-label="2026년 10월 달력">
+          <div class="weekday">SUN</div>
+          <div class="weekday">MON</div>
+          <div class="weekday">TUE</div>
+          <div class="weekday">WED</div>
+          <div class="weekday">THU</div>
+          <div class="weekday">FRI</div>
+          <div class="weekday">SAT</div>
+          <span></span><span></span><span></span><span></span>
+          <span>1</span><span>2</span><span>3</span>
+          <span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+          <span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span>
+          <span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span>
+          <strong>25</strong><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span><span>31</span>
+        </div>
+        <a class="pill-button light" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=%EB%B0%B1%EC%A2%85%ED%98%81%20%EA%B9%80%ED%95%98%EB%B9%88%20%EA%B2%B0%ED%98%BC%EC%8B%9D&dates=20261025T031000Z/20261025T051000Z&location=%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%8A%A4%ED%8C%8C%ED%8B%B0" target="_blank" rel="noreferrer">캘린더에 저장</a>
+      </section>
+
+      <section class="section location-section" id="location">
+        <p class="section-kicker">Location</p>
+        <h2>오시는 길</h2>
+        <img class="map-image" src="./images/map.svg" alt="그레이스파티 지도 placeholder" />
+        <div class="venue-box">
+          <strong>그레이스파티</strong>
+          <p>서울시 관악구 남부순환로 1440 그레이스파티</p>
+          <p class="en-address">1440, Nambusunhwan-ro, Gwanak-gu, Seoul</p>
+          <button class="copy-button" type="button" data-copy="서울시 관악구 남부순환로 1440 그레이스파티">주소 복사</button>
+        </div>
+        <div class="map-links">
+          <a href="https://map.naver.com/p/search/%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%8A%A4%ED%8C%8C%ED%8B%B0%20%EC%84%9C%EC%9A%B8%20%EA%B4%80%EC%95%85%EA%B5%AC" target="_blank" rel="noreferrer">네이버지도</a>
+          <a href="https://map.kakao.com/link/search/%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%8A%A4%ED%8C%8C%ED%8B%B0%20%EC%84%9C%EC%9A%B8%20%EA%B4%80%EC%95%85%EA%B5%AC" target="_blank" rel="noreferrer">카카오맵</a>
+          <a href="https://www.tmap.co.kr/" target="_blank" rel="noreferrer">T맵</a>
+        </div>
+        <div class="info-list">
+          <div>
+            <strong>지하철</strong>
+            <p>신림역 5번출구 셔틀 버스 5분 간격 운행</p>
+          </div>
+          <div>
+            <strong>주차</strong>
+            <p>별도 주차권 없이 2시간 무료</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section account-section">
+        <p class="section-kicker">For Your Heart</p>
+        <h2>마음 전하실 곳</h2>
+        <details open>
+          <summary>신랑 측 계좌번호</summary>
+          <div class="account-row">
+            <span>신랑</span><p>계좌번호 입력 예정</p>
+            <button class="copy-button" type="button" data-copy="신랑 계좌번호 입력 예정">복사</button>
+          </div>
+          <div class="account-row">
+            <span>신랑 부</span><p>계좌번호 입력 예정</p>
+            <button class="copy-button" type="button" data-copy="신랑 부 계좌번호 입력 예정">복사</button>
+          </div>
+          <div class="account-row">
+            <span>신랑 모</span><p>계좌번호 입력 예정</p>
+            <button class="copy-button" type="button" data-copy="신랑 모 계좌번호 입력 예정">복사</button>
+          </div>
+        </details>
+        <details>
+          <summary>신부 측 계좌번호</summary>
+          <div class="account-row">
+            <span>신부</span><p>계좌번호 입력 예정</p>
+            <button class="copy-button" type="button" data-copy="신부 계좌번호 입력 예정">복사</button>
+          </div>
+          <div class="account-row">
+            <span>신부 부</span><p>계좌번호 입력 예정</p>
+            <button class="copy-button" type="button" data-copy="신부 부 계좌번호 입력 예정">복사</button>
+          </div>
+          <div class="account-row">
+            <span>신부 모</span><p>계좌번호 입력 예정</p>
+            <button class="copy-button" type="button" data-copy="신부 모 계좌번호 입력 예정">복사</button>
+          </div>
+        </details>
+      </section>
+
+      <section class="section share-section">
+        <button class="share-button kakao-share" type="button">카카오톡 공유하기</button>
+        <button class="share-button" type="button" data-action="copy-url">청첩장 주소 복사하기</button>
+      </section>
+
+      <footer class="footer">
+        <p>소중한 걸음으로 함께해 주셔서 감사합니다.</p>
+        <strong>백종혁 · 김하빈 드림</strong>
+      </footer>
+    </main>
+
+    <div class="lightbox" hidden>
+      <button class="lightbox-close" type="button" aria-label="닫기">×</button>
+      <img src="" alt="" />
+    </div>
+
+    <div class="video-modal" hidden>
+      <div class="video-modal-panel">
+        <button class="modal-close" type="button" aria-label="닫기">×</button>
+        <div class="fake-video">
+          <span>Wedding Film Placeholder</span>
+          <p>실제 영상 링크가 준비되면 이 영역을 YouTube 영상으로 교체합니다.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

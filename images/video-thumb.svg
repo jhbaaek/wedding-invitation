@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 506">
+  <rect width="900" height="506" fill="#171313"/>
+  <rect x="50" y="50" width="800" height="406" fill="#d98fa1" opacity=".55"/>
+  <circle cx="450" cy="253" r="92" fill="#fff" opacity=".82"/>
+  <polygon points="425,205 425,301 505,253" fill="#171313"/>
+  <text x="450" y="420" fill="#fff" font-family="Georgia, serif" font-size="46" text-anchor="middle">Wedding Film Placeholder</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620">
+  <rect width="900" height="620" fill="#f9f6ef"/>
+  <path d="M40 160 H860 M40 310 H860 M40 460 H860 M230 40 V580 M470 40 V580 M700 40 V580" stroke="#d7ccc0" stroke-width="16"/>
+  <path d="M0 510 C220 360 410 590 900 360" fill="none" stroke="#8db8cf" stroke-width="34" opacity=".7"/>
+  <circle cx="560" cy="305" r="58" fill="#e96784"/>
+  <path d="M560 378 C560 378 492 318 492 266 A68 68 0 0 1 628 266 C628 318 560 378 560 378 Z" fill="#ba375b"/>
+  <circle cx="560" cy="266" r="24" fill="#fff"/>
+  <text x="450" y="560" fill="#171313" font-family="Arial, sans-serif" font-size="42" text-anchor="middle">Grace Party Map Placeholder</text>
+</svg>
