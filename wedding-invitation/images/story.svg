@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1000">
+  <rect width="900" height="1000" fill="#dfeaf0"/>
+  <path d="M0 680 C180 610 260 750 450 680 S720 610 900 700 V1000 H0 Z" fill="#8db8cf"/>
+  <circle cx="700" cy="180" r="72" fill="#e96784" opacity=".7"/>
+  <rect x="190" y="300" width="220" height="380" rx="110" fill="#171313"/>
+  <rect x="490" y="300" width="220" height="380" rx="110" fill="#fff8f8"/>
+  <text x="450" y="850" fill="#171313" font-family="Georgia, serif" font-size="58" text-anchor="middle">Story Placeholder</text>
+</svg>
